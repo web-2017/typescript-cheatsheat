@@ -38,9 +38,9 @@ type UserPost = Omit<User, 'id'>;
 
 #### Partial
 ```javascript
-type UserFullname = Partial<User>; // it means all fields optionals
+type UserProps = Partial<User>; // it means all fields optionals
 
-const userName: UserFullname = {
+const userName: UserProps = {
   firstname: 'Chris',
   age: 22,
 };
