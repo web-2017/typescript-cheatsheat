@@ -17,6 +17,11 @@ interface User {
 #### Pick
 ```javascript
 type UserFullname = Pick<User, 'firstname' | 'lastname'>;
+
+const userName: UserFullname = {
+  firstname: 'Chris',
+  lastname: 'Bongers',
+};
 ```
 #### Omit
 ```javascript
