@@ -35,3 +35,13 @@ const updateUser: UserPost = {
 
 type UserPost = Omit<User, 'id'>;
 ```
+
+#### Partial
+```javascript
+type UserFullname = Partial<User>; // it means all fields optionals
+
+const userName: UserFullname = {
+  firstname: 'Chris',
+  age: 22,
+};
+```
