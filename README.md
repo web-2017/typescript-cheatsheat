@@ -3,6 +3,8 @@
 
 ## types
 #### Pick
+````
+```javascript
 interface User {
   id?: number;
   firstname: string;
@@ -12,6 +14,8 @@ interface User {
   twitter?: string;
 }
 type UserFullname = Pick<User, 'firstname' | 'lastname'>;
+````
+```
 
 #### Omit
 type UserPost = Omit<User, 'id'>;
