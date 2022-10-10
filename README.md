@@ -2,7 +2,7 @@
 
 
 ## types
-#### Pick
+Example 
 ```javascript
 interface User {
   id?: number;
@@ -12,10 +12,14 @@ interface User {
   telephone?: number;
   twitter?: string;
 }
-type UserFullname = Pick<User, 'firstname' | 'lastname'>;
 ```
 
+#### Pick
+```javascript
+type UserFullname = Pick<User, 'firstname' | 'lastname'>;
+```
 #### Omit
+```javascript
 type UserPost = Omit<User, 'id'>;
 
 const updateUser: UserPost = {
@@ -25,3 +29,4 @@ const updateUser: UserPost = {
 };
 
 type UserPost = Omit<User, 'id'>;
+```
